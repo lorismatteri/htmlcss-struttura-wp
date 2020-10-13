@@ -1,6 +1,51 @@
+/* utility */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: red
+  background: lightgrey;
+}
+
+.float_left {
+  float: left;
+}
+
+/* /fine utilty */
+
+header {
+  width: 100%;
+  height: 20vh;
+  background: yellow;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.side {
+  background: red;
+}
+
+.left {
+  width: 30%;
+  height: 40vh;
+}
+
+.right {
+  width: 20%;
+  height: 70vh;
+}
+
+main {
+  width: 50%;
+  height: 40vh;
+  background: blue;
+}
+
+footer {
+  width: 100%;
+  height: 20vh;
+  background: green;
 }
