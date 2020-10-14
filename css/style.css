@@ -1,51 +1,69 @@
-/* utility */
+/* UTILITY */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: lightgrey;
 }
 
 .float_left {
   float: left;
 }
 
-/* /fine utilty */
-
-header {
-  width: 100%;
-  height: 20vh;
-  background: yellow;
+body {
+  background-image: url('../img/default-pattern.png');
 }
 
-.container::after {
+#container {
+  width: 1000px;
+  margin: auto;
+}
+
+.mt_20 {
+  margin-top: 20px;
+}
+
+.mb_20 {
+  margin-bottom: 20px;
+}
+
+/* SEZIONE HEADER */
+header {
+  height: 400px;
+  background: red;
+  position: relative;
+}
+
+/* SEZIONE NAVBAR */
+nav {
+  width: 100%;
+  height: 44px;
+  background: #504741;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* SEZIONE MAIN */
+main::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.side {
-  background: red;
-}
-
-.left {
-  width: 30%;
-  height: 40vh;
-}
-
-.right {
+.col_left, .col_right {
   width: 20%;
-  height: 70vh;
+  background: white;
 }
 
-main {
+/* SEZIONE CENTRALE */
+.col_center {
   width: 50%;
-  height: 40vh;
-  background: blue;
+  margin: 0 5%;
+  background: pink;
 }
 
+/* SEZIONE FOOTER */
 footer {
-  width: 100%;
-  height: 20vh;
-  background: green;
+  height: 200px;
+  background: red;
 }
